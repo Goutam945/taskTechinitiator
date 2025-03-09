@@ -17,7 +17,7 @@ void main() async {
 
   FirebaseFirestore.instance.collection('posts').get().then((snapshot) {
     if (snapshot.docs.isEmpty) {
-      print('❌ No posts found in Firestore.');
+      print('❌ No posts  found in Firestore.');
     } else {
       for (var doc in snapshot.docs) {
         print('✅ Post Found: ${doc.data()}');
